@@ -1,4 +1,4 @@
-# Capturador de Dados do Google Maps 🗺️
+# Automatizador de Captação de Clientes 🗺️
 
 Este é um projeto composto por dois scripts em Python para extrair informações de estabelecimentos comerciais no Google Maps e criar arquivos HTML com esses dados.
 
