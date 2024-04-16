@@ -60,7 +60,7 @@ python maps.py
 ## Additional Notes ℹ️
 
 - Ensure you have an active internet connection for the scraper to access Google Maps.
-- The generated HTML files will be saved in the `captures` directory within the project directory.
+- The generated HTML files will be saved in the `captações/{actual_data}` directory within the project directory.
 
 ## Perfect for Google Maps Client Acquisition 🎯
 
