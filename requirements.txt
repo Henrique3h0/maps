@@ -1,0 +1,5 @@
+colorama
+selenium
+webbrowser
+tqdm
+pyfiglet
