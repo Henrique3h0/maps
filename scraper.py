@@ -1,18 +1,37 @@
-import os
-import logging
-from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from colorama import init, Fore, Style
 from tqdm import tqdm
-import time
-import sys
-import re
-import threading
+
+barra_progresso = tqdm(total=15, desc='Modulos Scraper')
+
+barra_progresso.update(1)
 import os
+barra_progresso.update(1)
+import logging
+barra_progresso.update(1)
+from selenium import webdriver
+barra_progresso.update(1)
+from selenium.webdriver.common.by import By
+barra_progresso.update(1)
+from selenium.webdriver.support.ui import WebDriverWait
+barra_progresso.update(1)
+from selenium.webdriver.support import expected_conditions as EC
+barra_progresso.update(1)
+from colorama import init, Fore, Style
+barra_progresso.update(1)
+import time
+barra_progresso.update(1)
+import sys
+barra_progresso.update(1)
+import re
+barra_progresso.update(1)
+import threading
+barra_progresso.update(1)
+import os
+barra_progresso.update(1)
 import pyfiglet
-import random
+barra_progresso.update(1)
+import pyfiglet.fonts
+barra_progresso.update(1)
+barra_progresso.close()
 
 class GoogleMapsScraper:
     def __init__(self):
@@ -20,10 +39,6 @@ class GoogleMapsScraper:
         init()
 
         self.print_credits()
-
-        print("Carregando Modulos\n")
-        for _ in tqdm(range(10), desc="Carregando Scraper", ascii=True):
-            time.sleep(random.randint(1, 3))
 
         num_threads = os.cpu_count()
 

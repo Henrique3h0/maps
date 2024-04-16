@@ -1,20 +1,32 @@
-import os
-from selenium.webdriver.support import expected_conditions as EC
-from colorama import init, Fore, Style
 from tqdm import tqdm
+
+barra_progresso = tqdm(total=7, desc='Modulos Main')
+barra_progresso.update(1)
 import os
+barra_progresso.update(1)
+from selenium.webdriver.support import expected_conditions as EC
+barra_progresso.update(1)
+from colorama import init, Fore, Style
+barra_progresso.update(1)
 import datetime
+barra_progresso.update(1)
 import webbrowser
+barra_progresso.update(1)
 from scraper import GoogleMapsScraper
+barra_progresso.update(1)
+barra_progresso.close()
 
 
 
 if __name__ == "__main__":
+    scraper = GoogleMapsScraper()
+
+    scraper.clear_terminal()
+    scraper.print_credits()
     print("\n" + Fore.CYAN + Style.BRIGHT + "Digite um local e um tipo de estabelecimento")
     print("Exemplo: Pizzaria perto de São Paulo, SP" + Style.RESET_ALL)
     termo = input("\nDigite aqui: ")
 
-    scraper = GoogleMapsScraper()
     scraper.search_google_maps(termo)
     resultados = scraper.scrape_results()
     scraper.close_driver()

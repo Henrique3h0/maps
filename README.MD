@@ -1,75 +1,88 @@
-# Google Maps Scraper 🗺️
+# Capturador de Dados do Google Maps 🗺️
 
-This is a project consisting of two Python scripts to extract information from commercial establishments on Google Maps and create HTML files with this data.
+Este é um projeto composto por dois scripts em Python para extrair informações de estabelecimentos comerciais no Google Maps e criar arquivos HTML com esses dados.
 
-## Features 🚀
+## Características 🚀
 
 ### Script 1: scraper.py 📜
 
-The `scraper.py` script contains a `GoogleMapsScraper` class that performs the following tasks:
+O script `scraper.py` contém uma classe `GoogleMapsScraper` que realiza as seguintes tarefas:
 
-- Initializes a headless Chrome browser using Selenium.
-- Performs a search on Google Maps with a term provided by the user.
-- Extracts information from search results, such as name, address, website, and contact.
-- Creates threads to handle multiple results efficiently.
-- Closes the browser after scraping is completed.
+- Inicializa um navegador Chrome sem cabeçalho usando o Selenium.
+- Realiza uma busca no Google Maps com um termo fornecido pelo usuário.
+- **Informações Obtidas:**
+    - `👥 Nome da empresa`
+    - `📞 Contato da empresa`
+    - `🌐 Se possui um site, ou utiliza Instagram ou Facebook em vez de site`
+    - `🗺️ URL da página do Google Maps dessa empresa`
+- Cria threads para lidar com múltiplos resultados de forma eficiente.
+- Fecha o navegador após a conclusão da extração.
 
 ### Script 2: maps.py 🔄
 
-The `maps.py` script interacts with the Google Maps scraper and performs the following tasks:
+O script `maps.py` interage com o capturador do Google Maps e realiza as seguintes tarefas:
 
-- Prompts the user to enter a location and type of establishment.
-- Uses the scraper to search for and extract information from establishments.
-- Creates HTML files with the obtained data.
-- Opens the HTML files in the browser for visualization.
-- Displays messages to the user informing about the search results.
+- Solicita ao usuário que insira uma localização e tipo de estabelecimento.
+- Utiliza o capturador para buscar e extrair informações dos estabelecimentos.
+- Cria arquivos HTML com os dados obtidos.
+- Abre os arquivos HTML no navegador para visualização.
+- Exibe mensagens ao usuário informando sobre os resultados da busca.
 
-## Prerequisites 🛠️
+## Pré-requisitos 🛠️
 
-- Python 3.x installed on the system.
-- Required libraries can be installed using the `requirements.txt` file.
+- Python 3.x instalado no sistema.
+- As bibliotecas necessárias podem ser instaladas usando o arquivo `requirements.txt`.
 
-## How to Use 📋
+## Como Usar 📋
 
-1. Clone the repository to your local environment:
+1. Clone o repositório para o seu ambiente local:
 
 ```bash
 git clone https://github.com/Henrique3h0/maps
 ```
 
-2. Navigate to the project directory:
+2. Navegue até o diretório do projeto:
 
 ```bash
 cd maps
 ```
 
-3. Install the dependencies:
+3. Instale as dependências:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Run the `maps.py` script:
+4. Execute o script `maps.py`:
 
 ```bash
 python maps.py
 ```
 
-5. Follow the instructions presented in the terminal to perform the search.
+5. Siga as instruções apresentadas no terminal para realizar a busca.
 
-## Additional Notes ℹ️
+## Notas Adicionais ℹ️
 
-- Ensure you have an active internet connection for the scraper to access Google Maps.
-- The generated HTML files will be saved in the `captações/{actual_data}` directory within the project directory.
+- Certifique-se de ter uma conexão de internet ativa para que o capturador acesse o Google Maps.
+- Os arquivos HTML gerados serão salvos no diretório `captações/{data_atual}` dentro do diretório do projeto.
 
-## Perfect for Google Maps Client Acquisition 🎯
+## Perfeito para Aquisição de Clientes no Google Maps 🎯
 
-This tool is ideal for professionals who perform client acquisition using Google Maps, facilitating the extraction and organization of information from commercial establishments.
+Esta ferramenta é ideal para profissionais que realizam aquisição de clientes usando o Google Maps, facilitando a extração e organização de informações de estabelecimentos comerciais.
 
-## Contributions 🤝
+## Atualizações Futuras ⏳
 
-Contributions are welcome! Feel free to open an issue if you encounter any problems or to propose improvements.
+- [✅] Threading
+- [✅] Windows Fast Start
+- [❌] Get Images
+- [❌] Auto Whatsapp Send (com IA)
+- [❌] Auto SMS Send (com IA)
+- [❌] IA Copy (para criar uma copy para entrar em contato com cada empresa)
 
-## Author ✍️
+## Contribuições 🤝
 
-Developed by [LIMA](https://github.com/Henrique3h0).
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue se encontrar algum problema ou propor melhorias.
+
+## Autoria ✍️
+
+Desenvolvido por [LIMA](https://github.com/Henrique3h0).
